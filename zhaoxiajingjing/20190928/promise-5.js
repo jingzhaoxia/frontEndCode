@@ -10,7 +10,7 @@ function resolvePromise(promise2, x, resolve, reject) {
     let called;
     if(typeof x === 'function' || (typeof x === 'object' && x != null)) {
         try {
-            let x = x.then;
+            let then = x.then;
             if(typeof then === 'function') {
                 then.call(x, y=>{
                     if(called) return;
