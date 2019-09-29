@@ -114,4 +114,4 @@ class Promise {
     }
 }
 
-module.exprots = Promise;
+module.exports = Promise;
